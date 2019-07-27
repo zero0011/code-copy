@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://cdn.bootcss.com/weui/1.1.3/style/weui.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <link href="https://cdn.bootcss.com/weui/1.1.3/style/weui.css" rel="stylesheet">
+</head>
+<body>
+    <header class="nav">
+        <i class="nav-left">   
+        </i>
+         <span>影片详情</span>
+    </header>
+    <div class="page">
+        <!-- section1 -->
+        <section class="section-seperate">
+            <div class="container__background_on">
+                <div class="container__background"></div>
+                <div class="container__filter"></div>  
+                <div class="container" >
+                    <div class="container__top">
+                            <!-- pic -->
+                            <div class="container__top_movie">
+                                <img src="./images/0000.PNG" alt="" class="img" id="moviePicture">
+                            </div>
+                            <!-- detail -->
+                            <div class="container__top_text">
+                                <!-- name -->
+                                <div class="titel"><span> 银河补习班</span>
+                                </div>
+                                <div class="etitel"><span>looking up</span>
+                                </div>
+                                <!-- star -->
+                                <div class="grade">
+                                    <div class="rating" id="rating">
+
+                                    </div>
+                                    <span class="rating-score">9.4</span>
+                                    <div class="score-num">
+                                        <span>10</span>万人评分
+                                    </div>
+                                </div>
+                                <div class="detail"><span>
+                                    <p>剧情,家庭</p>
+                                    <p>中国大陆/147分钟</p>
+                                    <p>2019-07-18  08:00 大陆上映</p>
+                                </span>
+                                </div>
+                            </div>
+                        </div>                                                     
+                    <div class="container__bottom">
+                        <div class="bn1">
+                            <img src="./images/images/heart.png" alt="">
+                            <span>想看</span>
+                        </div>
+                        <div class="bn2">
+                            <img src="./images/images/star2.png" alt="">
+                            <span>评分</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section2 -->
+        <section class="section-seperate">
+            <div class="text-expander close">
+                <div class="text-expander__contnet down">
+                <p>银河补习班》是由天津橙子映像传媒有限公司出品的剧情片，由邓超、俞白眉联合执导，邓超领衔主演，白宇、任素汐、王西、孙浠伦、李建义、梁超等主演。
+                        该片故事发生在二十世纪80、90年代，讲述了一对父子跨越漫长时光收获爱与成长的亲情故事。该片于2019年7月18日在中国内地正式上映 [1-2]  。
+                </p>
+                </div>
+            <div class="text-expander__icon"></div>
+            </div>
+        </section>  
+        <!-- section3   -->
+        <section class="section-separate">
+            <div class="section-nav">
+                <p class="section-title">演职人员</p>
+                <ul class="movie-celebrities">
+                    
+                </ul>
+            </div>    
+        </section>
+        <!-- section4 -->
+        <section class="section-separate">
+            <div class="section-nav">
+                <p class="section-title">票房</p>
+                <div class="item-container">
+                    <div class="flex">
+                        <div class="item">
+                            <span id="ranking">3</span>
+                            <p>昨日票房排行</p>
+                        </div>
+                        <div class="item">
+                            <span id="bookingWeek">666</span>
+                            <p>首周票房(万)</p>
+                        </div>
+                        <div class="item">
+                            <span id="bookingTotal">8130</span>
+                            <p>点映票房(万)</p>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <!-- section5 -->
+        <section class="section-separate">
+            <div class="section-nav">
+                <p class="section-title">视频和剧照</p>
+                <ul class="movie-container">
+
+                </ul>
+            </div>
+        </section>
+        <!-- section6 -->
+        <section class="section-separate">
+            <div class="section-nav">
+                <p class="section-title">讨论</p>
+                <span class="join-talk">参与讨论</span>
+                <ul class="talk-container">
+                    <li>
+                        <div class="talk-container__sort">
+                            <span>全部</span>
+                            <span class="talk-container__num"></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="talk-container__sort">
+                            <span>好评</span>
+                            <span class="talk-container__num">123</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="talk-container__sort">
+                            <span>差评</span>
+                            <span class="talk-container__num">123</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="talk-container__sort">
+                            <span>点映</span>
+                            <span class="talk-container__num">123</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="talk-container__sort">
+                            <span>购票</span>
+                            <span class="talk-container__num">123</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="talk-container__sort">
+                            <span>认证作者</span>
+                            <span class="talk-container__num">123</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="talk-container__sort">
+                            <span>同城</span>
+                            <span class="talk-container__num">123</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- section7 -->
+        <section class="section-separate">
+            <div class="section-nav">
+                <p class="section-title">精选</p>
+                <div class="section-container__choose">
+                    <div class="choose__pic">
+                        <img src="./images/0000.PNG" alt="">
+                    </div>
+                    <div class="choose-right">
+                        <div class="choose__avatal">
+                            <div class="nickname">张三</div>
+                            <div class="lever">
+                                <img src="./images/images/star.png" alt="">
+                            </div>
+                            <p class="grade">给这部电影打了<span>10</span>分</p>
+                        </div>
+                        <div class="choose-text">
+                            <p class="choose__detail">
+                                提前进组的白宇、邵兵，每天连续十到十二个小时，头部向下练习吊威压，模拟失重状态 [8]  。
+                                王戈、吴亚衡自学大部头土木建筑知识，主动到建筑工地扛沙子上脚手架体验生活。
+                                饰演小马飞的6岁的冯泽昂为保证水里憋气超过30秒，特地学会了游泳。
+                                面对年仅6岁的冯泽昂，邓超用孩子易于接受和理解的方式调教，亲身示范动作、传授技巧，有时候跪在地上给小演员加油打气 [15]  。
+                                有一场戏讲的是马飞给爸爸写了一个纸条，上面的话让邓超现场就痛哭不止，被摄像机记录了下来。
+                                为了演好疯子的角色，魏尊穿着戏中的衣服在街上呆了三天体验生活。有一次他想跟为剧组打菜的大妈要一个馒头，后者却被吓到 [16]  
+                            </p>
+                        </div>   
+                        <div class="choose__bottom">
+                            <div class="data"><span>3天前</span></div>
+                            <div class="like-reply">
+                                <div class="like"><i class="weui-icon-success-no-circle" style="transform: scale(0.8)"></i><span>5228</span></div>
+                                <div class="reply"><i class="weui-icon-info-circle" style="transform: scale(0.8)"></i><span>261</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer style="display: none">
+        <div class="footer-buy">
+            <div class="footer-container">
+                <span>特惠购票</span>
+            </div>   
+        </div>
+    </footer>
+    <div id="toast">
+    <div class="weui-toast">
+            <i class="weui-icon-success-no-circle weui-icon_toast"></i>
+            <p class="weui-toast__content">已完成</p>
+    </div>
+    </div>
+    
+    
+    <script>
+        //引入后端数据
+            //自调函数
+            (function(){
+                $.ajax({
+                    url:'https://www.easy-mock.com/mock/5d2ed7b31418505a5562ae1a/ajexc/maoyandianying/learn',
+                    type:'get',
+                    success:function(res){
+                        console.log(res);
+                    celebrity(res.data.person);
+                    $('#ranking').html(res.data.booking.ranking);
+                    $('#bookingWeek').html(res.data.booking.bookingWeek);
+                    $('#bookingTotal').html(res.data.booking.bookingTotal);
+                    movie(res.data.pictures);
+                    talk2(res.data.commentNum);
+
+
+                    
+
+
+
+                }
+                })
+            })()
+
+        //点击是否想看事件
+        var bool=false;
+        $('.bn1').click(function(){
+            if(bool){
+                bool=false;
+                $('.bn1 img').attr('src','./images/images/heart.png');
+                $('#toast .weui-toast__content').html('已经取消想看');
+            }else{
+            bool=true;
+            $('.bn1 img').attr('src','./images/images/heart1.png');
+            $('#toast .weui-toast__content').html('已经标记为想看');
+            }
+
+            $('#toast').addClass('show');
+            setTimeout(function(){
+                $('#toast').removeClass('show');
+            },2000,)
+        })
+
+        //下拉箭头
+        var word_box=document.querySelector('.text-expander');
+        var word=document.querySelector('.text-expander__contnet');
+        var icon=document.querySelector('.text-expander__icon');
+        var i=false;
+        word_box.addEventListener('click',function(){
+            if(i){
+                i=false;
+                word.classList.add('down');
+                icon.classList.remove('up');
+            }else{
+            i=true;
+            word.classList.remove('down');
+            icon.classList.add('up');
+        }
+        })
+        
+        //演员人员
+            function celebrity(e){
+                for(var i=0;i<e.length;i++){
+                    $('.movie-celebrities').append(
+                        `<li>
+                            <a href="#">
+                                <div class="movie-celebrities__pic">
+                                    <img src="${e[i].avatal}" alt="">
+                                </div>
+                                <div class="movie-celebrities__nick">${e[i].name}</div>
+                                <div class="movie-celebrities__role">${e[i].sort}</div>
+                            </a>
+                        </li>`
+                    )
+                }
+            }
+
+        //演员剧照
+            function movie(e){
+                for(i=0;i<e.length;i++){
+                    $('.movie-container').append(
+                    `<li class="movie-icon">
+                        <img src="${e[i]}" alt="">
+                    </li>`
+                    )
+                }
+
+            }
+
+        //讨论
+        function talk(e){
+                 var sum = document.querySelectorAll('.talk-container__num');
+                sum[1].innerText=e.good;
+                sum[2].innerText=e.bad;
+                sum[3].innerText=e.dy;
+                sum[4].innerText=e.bought;
+                sum[5].innerHTML=e.author;
+                sum[6].innerHTML=e.sameCity;
+        }
+
+        //讨论2
+            function talk2(e){
+                var sum = ['good','bad','dy','bought','author','sameCity'];
+                var detail=['全部','好评','差评','点映','购票','认证作者','同城'];
+                for(var i=0;i<e.length;i++){
+                $('.talk-container').append(
+                    `<li>
+                        <div class="talk-container__sort">
+                            <span>${detail[i]}</span>
+                            <span class="talk-container__num">${e[i].sum[i]}</span>
+                        </div>
+                    </li>`
+                )
+                }
+            }
+
+        
+
+        //精选
+        function choose(){
+
+        }
+
+
+    </script>
+</body>
+</html>

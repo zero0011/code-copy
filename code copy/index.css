@@ -1,0 +1,447 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  font-size: 10px;
+  background-color: #fff;
+  -webkit-overflow-scrolling: display none;
+}
+#toast {
+  display: none;
+}
+.show {
+  display: block !important;
+}
+.section-seperate {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  padding-top: 0.4rem;
+  border-top: 1px soild #000;
+}
+.nav {
+  background-color: #3a3636;
+  text-align: center;
+  width: 100%;
+  height: 4rem;
+  padding: 2px;
+  font-size: 18px;
+  position: relative;
+  box-sizing: border-box;
+}
+.nav .nav-left:before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid #fff;
+  background-color: #3a3636;
+  position: absolute;
+  top: 25%;
+  left: 2%;
+  border-top: none;
+  border-right: none;
+  transform-origin: 0% 100%;
+  transform: rotate(45deg);
+}
+.nav span {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.page .section-seperate {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  padding-top: 0.4rem;
+  border-top: 1px soild #e5e5e5;
+}
+.page .text-expander {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.page .text-expander .text-expander__icon {
+  content: '';
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.5;
+  border: 1px solid #000;
+  background-color: #fff;
+  left: 50%;
+  top: 90%;
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  transition: transform 2s;
+}
+.page .text-expander .text-expander__contnet {
+  font: 14px/1.5 Arial, Helvetica, sans-serif;
+  opacity: 0.7;
+}
+.page .text-expander .down {
+  min-height: 65px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+.page .text-expander .up {
+  transform: rotate(-135deg);
+}
+.page .container__background_on {
+  padding: 0.4rem;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+.page .container__background_on .container__background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  filter: blur(0.6rem);
+  background-image: url("./images/0000.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+  box-sizing: border-box;
+}
+.page .container__background_on .container__filter {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #40454d;
+  opacity: 0.1;
+}
+.page .container {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem;
+  padding-bottom: 1rem;
+}
+.page .container .container__top .container__top_movie {
+  float: left;
+  width: 11.854rem;
+  height: 15rem;
+  border: 1px solid #f2f2f3;
+  position: relative;
+  overflow: hidden;
+}
+.page .container .container__top .container__top_movie img {
+  height: 100%;
+  outline: none;
+}
+.page .container .container__top .container__top_movie:after {
+  content: '';
+  background-image: url("/images/images/bofang.png");
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  transform: translate(-50%, -50%);
+  display: block;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-size: cover;
+}
+.page .container .container__top .container__top_text {
+  overflow: hidden;
+  padding-left: 1rem;
+}
+.page .container .container__top .container__top_text .titel {
+  font-size: 14px;
+  line-height: 1;
+}
+.page .container .container__top .container__top_text .etitel {
+  font-size: 12px;
+}
+.page .container .container__top .container__top_text .grade {
+  font-size: 12px;
+  margin-bottom: 0.8rem;
+}
+.page .container .container__top .container__top_text .grade .rating-score {
+  font-size: 1.5rem;
+  color: #ffc600;
+}
+.page .container .container__top .container__top_text .detail {
+  margin-bottom: 0.2rem;
+}
+.page .container .container__top .container__top_text .detail p {
+  margin-bottom: 0.4rem;
+  font-size: 12px;
+  opacity: 0.7;
+}
+.page .container .container__bottom {
+  margin-top: 1.5rem;
+  display: flex;
+}
+.page .container .container__bottom .bn1 {
+  flex: 1;
+  border: 1px solid rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.4);
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0.8rem 0;
+  border-radius: 4px;
+  margin-right: 1rem;
+}
+.page .container .container__bottom .bn1 img {
+  width: 14px;
+}
+.page .container .container__bottom .bn1 span {
+  vertical-align: middle;
+  font-size: 1.3rem;
+}
+.page .container .container__bottom .bn2 {
+  flex: 1;
+  border: 1px solid rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.4);
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0.8rem 0;
+  border-radius: 4px;
+}
+.page .container .container__bottom .bn2 img {
+  width: 14px;
+}
+.page .container .container__bottom .bn2 span {
+  vertical-align: middle;
+  font-size: 1.3rem;
+}
+.page .section-separate .section-nav {
+  padding: 1rem;
+  position: relative;
+}
+.page .section-separate .section-nav .section-title {
+  font-size: 2rem;
+  color: #000;
+}
+.page .section-separate .section-nav .movie-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  overflow-y: scroll;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+.page .section-separate .section-nav .movie-container .movie-icon {
+  margin-right: 0.7rem;
+  width: 13rem;
+  height: 10rem;
+  display: inline-block;
+  text-align: center;
+}
+.page .section-separate .section-nav .movie-container .movie-icon img {
+  width: 100%;
+  height: 100%;
+}
+.page .section-separate .section-nav .movie-container:first-child {
+  width: 16rem;
+  height: 10rem;
+  display: inline-block;
+  text-align: center;
+}
+.page .section-separate .section-nav .item-container {
+  padding: 0.5rem;
+}
+.page .section-separate .section-nav .item-container .flex {
+  display: flex;
+}
+.page .section-separate .section-nav .item-container .flex .item {
+  flex: 1;
+  text-align: center;
+}
+.page .section-separate .section-nav .item-container .flex .item #ranking,
+.page .section-separate .section-nav .item-container .flex .item #bookingWeek,
+.page .section-separate .section-nav .item-container .flex .item #bookingTotal {
+  font-size: 2rem;
+  color: #f00;
+}
+.page .section-separate .section-nav .item-container .flex .item p {
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+.page .section-separate .section-nav .movie-celebrities {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  white-space: nowrap;
+}
+.page .section-separate .section-nav .movie-celebrities .movie-celebrities__pic {
+  height: 100%;
+  width: 9rem;
+  height: 11rem;
+  overflow: hidden;
+  display: inline-block;
+}
+.page .section-separate .section-nav .movie-celebrities .movie-celebrities__pic img {
+  height: 100%;
+  overflow: hidden;
+}
+.page .section-separate .section-nav .movie-celebrities .movie-celebrities__role {
+  display: block;
+  font-size: 0.2rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #999;
+}
+.page .section-separate .section-nav .movie-celebrities .movie-celebrities__nick {
+  font-size: 1.3rem;
+  color: #000;
+}
+.page .section-separate .section-nav .movie-celebrities li {
+  display: inline-block;
+  text-align: center;
+}
+.join-talk {
+  text-align: center;
+  width: 6rem;
+  height: 2rem;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  border-radius: 20px;
+  border: 1px solid #e54847;
+  font-size: 1.3rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #e54847;
+  color: #fff;
+}
+.talk-container {
+  margin: 1rem 0;
+  overflow: hidden;
+}
+.talk-container li {
+  display: inline-block;
+}
+.talk-container .talk-container__sort {
+  border: 1px solid #bababa;
+  border-radius: 20px;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.5rem;
+  margin-right: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer .footer-buy {
+  width: 100%;
+  height: 5rem;
+  border: 1px solid #e54847;
+  background-color: #e54847;
+}
+footer .footer-buy .footer-container {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  padding: 0.7rem 2rem 0.5rem 2rem;
+}
+.section-container__choose {
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.section-container__choose .choose__pic {
+  height: 4rem;
+  width: 4rem;
+  overflow: hidden;
+  border-radius: 20px;
+  float: left;
+}
+.section-container__choose .choose__pic img {
+  height: 100%;
+}
+.section-container__choose .choose-right {
+  overflow: hidden;
+  margin-left: 5rem;
+}
+.section-container__choose .choose-right .choose__avatal {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.section-container__choose .choose-right .choose__avatal .nickname {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+.section-container__choose .choose-right .choose__avatal .lever {
+  width: 2.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  display: inline-block;
+}
+.section-container__choose .choose-right .choose__avatal .lever img {
+  width: 100%;
+}
+.section-container__choose .choose-right .choose__avatal .grade {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+.section-container__choose .choose-right .choose-text {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.section-container__choose .choose-right .choose-text .choose__detail {
+  line-height: 1.3;
+  font-weight: 549;
+}
+.section-container__choose .choose-right .choose__bottom {
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  vertical-align: center;
+}
+.section-container__choose .choose-right .choose__bottom .data {
+  font-size: 1.3rem;
+  opacity: 0.7;
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.section-container__choose .choose-right .choose__bottom .like-reply {
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+}
+.section-container__choose .choose-right .choose__bottom .like-reply .like {
+  display: inline-block;
+  border: 1px solid #999;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  color: #999;
+}
+.section-container__choose .choose-right .choose__bottom .like-reply .reply {
+  display: inline-block;
+  border: 1px solid #999;
+  padding: 0.3rem 0.5rem;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  color: #999;
+}
